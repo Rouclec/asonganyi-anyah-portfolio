@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { Apple, ArrowLeft, Github, Globe, Smartphone } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 const projects = {
   foodhouse: {
@@ -189,7 +190,14 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
 
         {/* Main Image */}
         <div className="relative overflow-hidden rounded-xl border border-border/50 bg-card/50 aspect-video flex items-center justify-center">
-          <img src={project.image || "/placeholder.svg"} alt={project.title} className="w-full h-full object-cover" />
+          <Image
+            src={project.image || "/placeholder.svg"}
+            alt={project.title}
+            fill
+            priority
+            sizes="(min-width: 1024px) 768px, 100vw"
+            className="object-cover"
+          />
         </div>
       </section>
 
@@ -230,12 +238,14 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                       <button
                         type="button"
                         aria-label={`View screenshot: ${screenshot.alt}`}
-                        className="group relative cursor-pointer overflow-hidden rounded-xl border border-border/50 bg-card/50 hover:border-primary/50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                        className="group relative w-full aspect-video cursor-pointer overflow-hidden rounded-xl border border-border/50 bg-card/50 hover:border-primary/50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                       >
-                        <img
+                        <Image
                           src={screenshot.src || "/placeholder.svg"}
                           alt={screenshot.alt}
-                          className="w-full h-full object-contain aspect-video"
+                          fill
+                          sizes="(min-width: 768px) 33vw, 100vw"
+                          className="object-contain"
                         />
                         <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-black/20" />
                       </button>

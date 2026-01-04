@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Github } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 const projects = [
   {
@@ -187,10 +188,12 @@ export default function ProjectsPage() {
                 {/* Image */}
                 <div className={index % 2 === 1 ? "md:order-1" : ""}>
                   <div className="relative overflow-hidden rounded-xl border border-border/50 bg-card/50 aspect-video flex items-center justify-center group-hover:border-primary/50 transition-colors">
-                    <img
+                    <Image
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
-                      className="w-full h-full object-cover"
+                      fill
+                      sizes="(min-width: 768px) 50vw, 100vw"
+                      className="object-cover"
                     />
                   </div>
                 </div>
