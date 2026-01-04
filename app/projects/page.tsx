@@ -59,7 +59,7 @@ const projects = [
     ],
     link: "https://admindashboard.vsorpaytesting.xyz",
     github: "#",
-    image: "/vsorpay/cover.jpg",
+    image: "/vsorpay/cover.jpeg",
   },
   {
     id: "itamba",

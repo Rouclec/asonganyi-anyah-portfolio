@@ -75,7 +75,7 @@ const projects = {
       web: "https://admindashboard.vsorpaytesting.xyz",
     },
     github: "#",
-    image: "/vsorpay/cover.jpg",
+    image: "/vsorpay/cover.jpeg",
     screenshots: [
       { src: "/vsorpay/dashboard.png", alt: "Payment dashboard", portrait: false },
       { src: "/vsorpay/transactions.png", alt: "Transactions list", portrait: false },
