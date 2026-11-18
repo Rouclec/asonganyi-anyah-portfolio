@@ -11,8 +11,8 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Asonganyi Rouclec Forsamp | Portfolio",
-  description: "Bold, confident developer showcasing production-quality projects and technical expertise.",
+  title: "Asonganyi Rouclec Forsamp Anyah | Engineering Manager",
+  description: "Engineering Manager and backend platform engineer building reliable, secure production systems.",
   generator: "v0.app",
   icons: {
     icon: [

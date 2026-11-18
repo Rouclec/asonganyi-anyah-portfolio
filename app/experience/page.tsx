@@ -2,42 +2,29 @@ import { Badge } from "@/components/ui/badge"
 
 const experiences = [
   {
-    title: "Team Lead - Iknite Studio",
+    title: "Engineering Manager",
     company: "Iknite Studio",
-    period: "11/2024 - Present",
+    period: "09/2026 - Present",
     description:
-      "Leading development of VsorPay, a cross-border money transfer platform with a team of 4-5 engineers. Architecting scalable microservices systems and establishing production-grade development practices.",
+      "Lead engineering delivery across active products while remaining hands-on with backend systems, architecture, quality, security, and AI-assisted engineering workflows.",
     achievements: [
-      "Designed microservices architecture using gRPC, Protobuf, and SQLC for secure payment processing",
-      "Implemented core features including authentication, user verification, and money transfer flow",
-      "Configured unit testing (Go Mock) and frontend testing (Jest, Maestro), achieving 40% test coverage",
-      "Set up CI/CD pipelines for mobile, backend, and dashboards ensuring reliable deployments",
+      "Manage planning, assignments, dependencies, release readiness, defect triage, and incident follow-up",
+      "Set expectations for architecture, code review, testing, documentation, security, and reproducible AI-assisted work",
+      "Coach engineers through reviews and development plans while maintaining technical credibility across backend, mobile, and cloud delivery",
+      "Create reusable engineering checklists, automation, templates, and runbooks that improve consistency across projects",
     ],
   },
   {
-    title: "Lead Mobile Developer & Agile Coach",
+    title: "Engineering Lead and Team Lead",
     company: "Iknite Studio",
-    period: "01/2023 - Present",
+    period: "2023 - 2026",
     description:
-      "Leading development of Itamba, an offline-first mobile app for legal document management. Managing mobile infrastructure and serving as Agile Coach for sprint planning.",
+      "Led teams of 4-5 engineers across payment, legal-information, food-delivery, voting, and operational platforms.",
     achievements: [
-      "Architected offline-first mobile infrastructure with robust data synchronization",
-      "Streamlined CI/CD pipelines reducing deployment time significantly",
-      "Served as Agile Coach, overseeing sprint planning and improving team delivery velocity",
-      "Mentored mobile developers on React Native and Expo best practices",
-    ],
-  },
-  {
-    title: "Team Lead - Iknite Studio",
-    company: "Iknite Studio",
-    period: "04/2023 - 11/2024",
-    description:
-      "Led development of Omala, a subscription-based food delivery platform. Guided a team of 5 engineers to deliver an integrated, scalable product with real-time features.",
-    achievements: [
-      "Built Expo mobile app with real-time order tracking and push notifications",
-      "Implemented WebSocket-based location tracking and order updates",
-      "Led team of 5 engineers through product development lifecycle",
-      "Achieved 99.9% uptime and sub-second real-time update latency",
+      "Designed and reviewed production systems using Go, gRPC, Protobuf, SQLC, Node.js, PostgreSQL, React Native, and Next.js",
+      "Established CI/CD, automated testing, release practices, and engineering standards across mobile, backend, and dashboard services",
+      "Led VsorPay payment architecture, Itamba offline-first synchronization, and real-time logistics workflows",
+      "Mentored engineers and translated product requirements into maintainable architecture, delivery plans, and acceptance evidence",
     ],
   },
   {
@@ -54,16 +41,15 @@ const experiences = [
     ],
   },
   {
-    title: "Backend & Mobile Developer",
+    title: "Backend and Mobile Developer",
     company: "Iknite Studio",
-    period: "03/2022 - 04/2023",
+    period: "2022 - 2023",
     description:
-      "Contributed to CassVita and CIMFEST Voting platforms, developing backend systems with Node.js and MongoDB. Built React and Next.js dashboards.",
+      "Developed backend services, REST APIs, mobile features, and React/Next.js dashboards for supply-chain and voting products.",
     achievements: [
       "Developed backend systems with Node.js and MongoDB for voting and supply chain applications",
-      "Built React and Next.js dashboards for data visualization and management",
-      "Implemented REST APIs for mobile and web applications",
-      "Contributed to real-time data processing and updates",
+      "Built React and Next.js dashboards for operational reporting and data-backed workflows",
+      "Contributed to mobile features, real-time updates, data models, and maintainable product interfaces",
     ],
   },
 ]
@@ -73,14 +59,14 @@ const skills = {
   backend: ["Node.js", "Go", "Express", "gRPC", "Protobuf", "Microservices", "REST APIs"],
   databases: ["PostgreSQL", "MongoDB", "Firebase"],
   devops: ["Docker", "CI/CD", "GitHub Actions", "AWS", "CloudFormation"],
-  tools: ["Git", "GitHub", "Jest", "Maestro", "Agile", "WebSockets"],
+  tools: ["Git", "GitHub", "Jest", "Maestro", "Agile", "WebSockets", "Secure APIs"],
 }
 
 const education = [
   {
     degree: "B.Sc. Computer Engineering",
     institution: "University of Buea",
-    year: "Graduated",
+    year: "2024",
     description: "Strong foundation in computer science and engineering principles",
   },
 ]
@@ -92,8 +78,8 @@ export default function ExperiencePage() {
       <section className="max-w-6xl mx-auto px-6 py-20 md:py-28">
         <h1 className="text-5xl md:text-6xl font-bold text-balance mb-6">Experience & Skills</h1>
         <p className="text-xl text-foreground/70 text-balance max-w-3xl leading-relaxed">
-          4+ years building production-grade applications at Iknite Studio. Expertise in full-stack development, team
-          leadership, microservices architecture, and mobile app development.
+          Engineering Manager and hands-on backend/platform engineer with 4+ years building production-grade systems.
+          Leads engineering delivery, architecture, release quality, team development, and secure product execution.
         </p>
       </section>
 
@@ -163,7 +149,7 @@ export default function ExperiencePage() {
 
       {/* Education */}
       <section className="max-w-6xl mx-auto px-6 py-20 md:py-28">
-        <h2 className="text-3xl font-bold mb-12">Education</h2>
+        <h2 className="text-3xl font-bold mb-12">Education and Professional Development</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {education.map((edu, index) => (
             <div key={index} className="border border-border rounded-lg p-6">

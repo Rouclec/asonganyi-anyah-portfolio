@@ -6,7 +6,6 @@ export function Footer() {
 
   const links = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
     { href: "/projects", label: "Projects" },
     { href: "/experience", label: "Experience" },
     { href: "/contact", label: "Contact" },
@@ -25,10 +24,10 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link href="/" className="text-2xl font-bold text-primary hover:text-accent transition-colors">
-              Dev
+              ARF
             </Link>
             <p className="text-foreground/60 text-sm leading-relaxed">
-              Senior full-stack developer building production-quality applications.
+              Engineering Manager and backend platform engineer building reliable, secure production systems.
             </p>
           </div>
 
@@ -61,7 +60,7 @@ export function Footer() {
                   <a
                     key={item.label}
                     href={item.href}
-                    download={item.label === "Resume" ? "Asonganyi Anyah Resume.pdf" : undefined}
+                    download={item.label === "Resume" ? "Asonganyi Rouclec Forsamp Anyah Resume.pdf" : undefined}
                     className="text-foreground/60 hover:text-primary transition-colors text-sm"
                   >
                     {item.label}

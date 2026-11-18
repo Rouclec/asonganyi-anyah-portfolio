@@ -11,18 +11,17 @@ export default function Home() {
           <div className="space-y-8">
             <div className="space-y-4">
               <div className="text-primary font-semibold text-lg">Hi, I'm</div>
-              <h1 className="text-6xl md:text-7xl font-bold text-balance">Asonganyi Rouclec Forsamp</h1>
+              <h1 className="text-6xl md:text-7xl font-bold text-balance">Asonganyi Rouclec Forsamp Anyah</h1>
             </div>
 
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-balance mb-6">
-                Full-Stack Developer
-                <span className="text-primary"> & Team Lead</span>
+                Engineering Manager
+                <span className="text-primary"> & Backend Platform Engineer</span>
               </h2>
               <p className="text-lg text-foreground/70 text-balance leading-relaxed">
-                Building production-quality applications with React, Next.js, React Native/Expo, and modern backend
-                technologies. Specialized in leading teams, architecting scalable systems, and delivering high-impact
-                solutions.
+                Leading engineering delivery while remaining hands-on with backend systems, cloud deployments, secure
+                payment workflows, and reliable product architecture.
               </p>
             </div>
 
@@ -46,12 +45,12 @@ export default function Home() {
                 <p className="text-sm text-foreground/60">Years Experience</p>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary">20+</div>
-                <p className="text-sm text-foreground/60">Projects Built</p>
+                <div className="text-3xl font-bold text-primary">5</div>
+                <p className="text-sm text-foreground/60">Engineers Led</p>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary">12+</div>
-                <p className="text-sm text-foreground/60">Team Members Led</p>
+                <div className="text-3xl font-bold text-primary">4</div>
+                <p className="text-sm text-foreground/60">Core Systems</p>
               </div>
             </div>
           </div>
@@ -76,20 +75,19 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="md:col-span-2 space-y-6">
               <p className="text-lg text-foreground/70 leading-relaxed">
-                I'm a software engineer and team lead with 4+ years of experience building scalable web, mobile, and
-                backend systems. My expertise spans full-stack development with a strong focus on React, React Native,
-                Expo, Node.js, and modern cloud deployments. I'm passionate about leading high-performing teams and
-                architecting solutions that deliver real business impact.
+                I'm an Engineering Manager and hands-on software engineer with 4+ years of experience building
+                production web, mobile, and backend systems. I lead planning, architecture, code review, release
+                readiness, incident follow-up, and team development while staying close to implementation.
               </p>
               <p className="text-lg text-foreground/70 leading-relaxed">
-                At Iknite Studio, I've led development of multiple production applications including subscription-based
-                food delivery platforms, cross-border payment solutions, legal management systems, and voting platforms.
-                I specialize in microservices architecture, real-time features with WebSockets, and comprehensive CI/CD
-                pipelines.
+                My strongest technical focus is backend and platform engineering with Go, Node.js, TypeScript,
+                PostgreSQL, microservices, APIs, cloud deployment, CI/CD, real-time systems, and offline-first data
+                synchronization.
               </p>
               <p className="text-lg text-foreground/70 leading-relaxed">
-                Beyond coding, I mentor teams, establish development best practices, and mentor the next generation of
-                engineers. I'm driven by innovation and creating solutions that solve real problems at scale.
+                I have worked across cross-border payments, logistics, legal information, IoT monitoring, voting, and
+                operational platforms. I care about secure delivery, useful documentation, and engineering systems that
+                make teams more predictable.
               </p>
             </div>
 
@@ -97,13 +95,13 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-4">Core Skills</h3>
               <div className="space-y-3">
                 {[
-                  "React & Next.js",
-                  "React Native & Expo",
-                  "TypeScript & JavaScript",
-                  "Node.js & Go",
-                  "PostgreSQL & MongoDB",
-                  "Microservices Architecture",
-                  "Team Leadership",
+                  "Engineering Leadership",
+                  "Backend & Platform Systems",
+                  "Go, Node.js & TypeScript",
+                  "PostgreSQL & Microservices",
+                  "Cloud Delivery & CI/CD",
+                  "Secure Payment Workflows",
+                  "Offline-First Synchronization",
                 ].map((skill) => (
                   <div key={skill} className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-primary rounded-full" />
@@ -135,6 +133,8 @@ export default function Home() {
                 "AWS",
                 "gRPC",
                 "Microservices",
+                "Secure APIs",
+                "Release Governance",
               ].map((tech) => (
                 <div
                   key={tech}
