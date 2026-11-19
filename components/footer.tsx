@@ -6,7 +6,7 @@ export function Footer() {
 
   const links = [
     { href: "/", label: "Home" },
-    { href: "/projects", label: "Projects" },
+    { href: "/projects", label: "Work" },
     { href: "/experience", label: "Experience" },
     { href: "/contact", label: "Contact" },
   ]
@@ -18,13 +18,13 @@ export function Footer() {
   ]
 
   return (
-    <footer className="border-t border-border bg-card/50">
-      <div className="max-w-6xl mx-auto px-6 py-16 md:py-20">
+    <footer className="border-t border-[#d7e2ec] bg-[#f7faff]">
+      <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="space-y-4">
-            <Link href="/" className="text-2xl font-bold text-primary hover:text-accent transition-colors">
-              ARF
+            <Link href="/" className="text-2xl font-black tracking-[-0.08em] text-[#16375c] transition-colors hover:text-primary">
+              AA
             </Link>
             <p className="text-foreground/60 text-sm leading-relaxed">
               Engineering Manager and backend platform engineer building reliable, secure production systems.
@@ -90,7 +90,7 @@ export function Footer() {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 bg-background border border-border rounded-lg hover:border-primary/50 hover:bg-primary/10 transition-colors"
+                    className="border border-[#d7e2ec] bg-background p-2 transition-colors hover:border-primary hover:text-primary"
                     aria-label={item.label}
                   >
                     <Icon className="w-5 h-5 text-foreground/60 hover:text-primary transition-colors" />

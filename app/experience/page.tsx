@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge"
+import { CheckCircle2 } from "lucide-react"
 
 const experiences = [
   {
@@ -91,7 +92,7 @@ export default function ExperiencePage() {
             <div key={index} className="relative">
               {/* Timeline line */}
               {index !== experiences.length - 1 && (
-                <div className="absolute left-0 top-12 bottom-0 w-0.5 bg-gradient-to-b from-primary to-transparent" />
+                <div className="absolute bottom-0 left-[7px] top-12 w-px bg-[#d7e2ec]" />
               )}
 
               {/* Timeline dot */}
@@ -111,7 +112,7 @@ export default function ExperiencePage() {
                 <ul className="space-y-2">
                   {exp.achievements.map((achievement, idx) => (
                     <li key={idx} className="flex gap-3 text-foreground/70">
-                      <span className="text-primary mt-1">→</span>
+                      <CheckCircle2 aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                       <span>{achievement}</span>
                     </li>
                   ))}
