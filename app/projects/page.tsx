@@ -15,7 +15,7 @@ const projects = [
     solution:
       "Led end-to-end development of React Native/Expo mobile apps for buyers and sellers with real-time order tracking and push notifications. Designed and implemented backend services in Go with REST APIs and WebSocket support for live updates. Built Next.js admin dashboard for vendor operations and system management. Set up AWS infrastructure (EC2, RDS, S3) with CI/CD pipelines. Mentored an intern and reviewed contributions to ensure code quality.",
     impact:
-      "Delivered production-ready multi-platform ecosystem handling real-time order updates and seamless vendor operations. System achieves 99.9% uptime with minimal external dependencies.",
+      "Delivered a multi-platform ecosystem for real-time order updates, vendor operations, delivery coordination, and maintainable deployment workflows.",
     technologies: [
       "React Native",
       "Expo",
@@ -42,7 +42,7 @@ const projects = [
     solution:
       "Served as Team Lead guiding 4-5 engineers. Designed microservices architecture using Go with gRPC and Protobuf for inter-service communication. Implemented type-safe queries with SQLC and comprehensive testing using GoMock (40% coverage) on backend and Jest & Maestro on frontend. Built React Native/Expo mobile app and established automated CI/CD pipelines across all services.",
     impact:
-      "Launched production payment platform with strongly typed backend architecture, comprehensive testing coverage reducing runtime errors, and automated deployment pipelines ensuring reliable cross-border transactions.",
+      "Delivered a payment platform foundation with strongly typed backend architecture, automated testing, and deployment pipelines for reliable cross-border transaction workflows.",
     technologies: [
       "React Native",
       "Expo",
@@ -176,11 +176,13 @@ export default function ProjectsPage() {
                           View Details <ArrowRight className="w-4 h-4 ml-2" />
                         </Link>
                       </Button>
-                      <Button size="sm" variant="outline" asChild>
-                        <a href={project.github} target="_blank" rel="noopener noreferrer">
-                          <Github className="w-4 h-4 mr-2" /> Code
-                        </a>
-                      </Button>
+                      {project.github && project.github !== "#" && (
+                        <Button size="sm" variant="outline" asChild>
+                          <a href={project.github} target="_blank" rel="noopener noreferrer">
+                            <Github className="w-4 h-4 mr-2" /> Code
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -208,7 +210,7 @@ export default function ProjectsPage() {
         <div className="max-w-3xl mx-auto px-6 text-center space-y-8">
           <h2 className="text-4xl font-bold">Ready to Work Together?</h2>
           <p className="text-lg text-foreground/70 leading-relaxed">
-            I'm always interested in discussing new projects, collaborations, or innovative ideas.
+          I'm open to remote engineering leadership, backend/platform, and secure product engineering opportunities.
           </p>
           <Link href="/contact">
             <Button size="lg" className="gap-2">

@@ -5,7 +5,7 @@ export const runtime = "nodejs";
 
 export async function GET() {
   const resumePath = path.join(process.cwd(), "public", "assets", "resume.pdf");
-  const downloadName = "Asonganyi Anyah Resume.pdf";
+    const downloadName = "Asonganyi Rouclec Forsamp Anyah Resume.pdf";
   const downloadNameEncoded = encodeURIComponent(downloadName);
 
   try {
